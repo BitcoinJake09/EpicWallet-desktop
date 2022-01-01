@@ -85,6 +85,7 @@
                             </label>
                             <select class="col-sm-9 selectpicker" name="current-theme"  id="current-theme">
                                 <option>Default</option>
+                                <option>Dark Mode</option>
                                 <option>Coming soon...</option>
                             </select>
                         </div>
@@ -119,7 +120,7 @@
                                 <option>Low</option>
                                 <option>Custom</option>
                             </select>
-                        </div>                
+                        </div>
                         <div class="form-group">
                             <label for="minimum-tx-fee" class="col-sm-3 control-label no-right-padding">
                                 Minimum Fee
@@ -132,7 +133,7 @@
                                 </div>
                             </div>
                         </div>
-                    </fieldset>            
+                    </fieldset>
                 </div>
                 <!-- API Keys -->
                 <div id="apikeys" class="tab-pane">
@@ -147,7 +148,7 @@
                             </div>
                         </div>
                     </fieldset>
-                </div>                
+                </div>
                 <!-- Server Settings -->
                 <div id="servers" class="tab-pane">
                     <fieldset>
@@ -287,7 +288,7 @@
                         </div>
                     </fieldset>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
     </form>
@@ -320,10 +321,10 @@ $(document).ready(function(){
     });
 
     // Initialize any tooltips
-    $('[data-toggle="tooltip"]').tooltip({ 
+    $('[data-toggle="tooltip"]').tooltip({
         html: true,
         placement: 'bottom'
-    }); 
+    });
 
     // Detect any server settings changes and treat as if user submited form
     $('#servers input, #servers select').change(function(){
@@ -435,7 +436,7 @@ $(document).ready(function(){
         dialogChangeAddress();
     }));
 
-    // Show change/edit address list form when user clicks the qrcode/address 
+    // Show change/edit address list form when user clicks the qrcode/address
     $('#settings-address-label').change(function(e){
         var label = $(this).val();
         setWalletAddressLabel(FW.WALLET_ADDRESS, label);
@@ -457,6 +458,15 @@ $(document).ready(function(){
             return;
         var net = $(this).val();
         setWalletNetwork(net);
+    });
+
+    // Handle updating the network
+    $('#current-theme').change(function(){
+        // Make sure wallet is unlocked
+        if(dialogCheckLocked('change wallet theme'))
+            return;
+        var wTheme = $(this).val();
+        setTheme(wTheme);
     });
 
 });
