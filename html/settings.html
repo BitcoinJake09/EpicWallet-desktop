@@ -84,8 +84,9 @@
                                 <a href="#" data-toggle="tooltip" title='This is the current theme being used' class="pull-right"><i class="fa fa-lg fa-question-circle-o margin-top-5" ></i></a>
                             </label>
                             <select class="col-sm-9 selectpicker" name="current-theme"  id="current-theme">
-                                <option>Default</option>
-                                <option>Dark Mode</option>
+                                <option>dark</option>
+                                <option>gray</option>
+                                <option>blue</option>
                                 <option>Coming soon...</option>
                             </select>
                         </div>
@@ -466,7 +467,7 @@ $(document).ready(function(){
         if(dialogCheckLocked('change wallet theme'))
             return;
         var wTheme = $(this).val();
-        setTheme(wTheme);
+        setTheme('theme-' + wTheme);
     });
 
 });
