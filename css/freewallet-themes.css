@@ -33,9 +33,9 @@
     border-right: 5px solid #ccc;
     padding-right: 11px;
 }
-.theme-grey .panel-theme > .panel-heading { 
-    color: #fff; 
-    background-color: #ff0000; 
+.theme-grey .panel-theme > .panel-heading {
+    color: #fff;
+    background-color: #ff0000;
     border-color: #ff0000;
 }
 .theme-grey .address-list li.active {
@@ -58,12 +58,12 @@
 .theme-grey .panel-default table tr.info th {
     background-color: #ccc;
 }
-.theme-grey .bootstrap-dialog.type-default .modal-header { 
+.theme-grey .bootstrap-dialog.type-default .modal-header {
     color: #fff;
     background-color: #777;
 }
-.theme-grey .bootstrap-dialog.type-default .bootstrap-dialog-title { 
-    color: #fff; 
+.theme-grey .bootstrap-dialog.type-default .bootstrap-dialog-title {
+    color: #fff;
 }
 .theme-grey .dropdown-menu-header {
     color: #fff;
@@ -78,7 +78,7 @@
 .theme-blue .header li > a.active {
     border-bottom: 5px solid #428bca;
 }
-.theme-blue .header li > a:hover, 
+.theme-blue .header li > a:hover,
 .theme-blue .modal  li > a:hover {
     background-color: #ddd;
     border-bottom: 5px solid #ccc;
@@ -110,9 +110,9 @@
     border-right: 5px solid #ccc;
     padding-right: 11px;
 }
-.theme-blue .panel-theme > .panel-heading { 
-    color: #fff; 
-    background-color: #ff0000; 
+.theme-blue .panel-theme > .panel-heading {
+    color: #fff;
+    background-color: #ff0000;
     border-color: #ff0000;
     border-top: 0px;
 }
@@ -136,26 +136,102 @@
 .theme-blue .panel-default table tr.info th {
     background-color: #d9edf7;
 }
-.theme-blue .bootstrap-dialog.type-default .modal-header { 
+.theme-blue .bootstrap-dialog.type-default .modal-header {
     color: #fff;
     background-color: #428bca;
 }
-.theme-blue .bootstrap-dialog.type-default .bootstrap-dialog-title { 
-    color: #fff; 
+.theme-blue .bootstrap-dialog.type-default .bootstrap-dialog-title {
+    color: #fff;
 }
 .theme-blue .dropdown-menu-header {
     color: #fff;
     background: #0067A5;
 }
 
+/* Dark Theme */
+.theme-dark .navbar-default .navbar-nav>li>a {
+    color: #20672c;
+}
+.theme-blue .header li > a.active {
+    border-bottom: 5px solid #509624;
+}
+.theme-dark .header li > a:hover,
+.theme-dark .modal  li > a:hover {
+    background-color: #dcead3;
+    border-bottom: 5px solid #b9d5a7;
+}
+.theme-dark .header  .dropdown-menu li > a:hover,
+.theme-dark .modal   .dropdown-menu li > a:hover,
+.theme-dark .left-dropdown-menu .dropdown-menu li > a:hover {
+    background-color: #dcead3;
+    padding-left: 5px;
+    border-left: 5px solid #b9d5a7;
+    border-bottom: 0px;
+    padding-bottom: 5px;
+}
+.theme-dark .balances-list li.active,
+.theme-dark .history-list li.active {
+    border-right: 5px solid #509624;
+    padding-right: 11px;
+}
+.theme-dark .left-dropdown-menu .dropdown-menu>.active>a {
+    color: #fff;
+    border-left: 5px solid #039112;
+    background-color: transparent;
+    padding-left: 5px;
+}
+.theme-dark .balances-list li:hover,
+.theme-dark .history-list li:hover {
+    color: #eee;
+    background-color: #dcead3;
+    border-right: 5px solid #b9d5a7;
+    padding-right: 11px;
+}
+.theme-dark .panel-theme > .panel-heading {
+    color: #fff;
+    background-color: #00000f;
+    border-color: #00000f;
+    border-top: 0px;
+}
+.theme-dark .address-list li.active {
+    border-left: 5px solid #509624;
+    padding-left: 10px;
+}
+.theme-dark .address-list li:hover {
+    color: #eee;
+    background-color: #dcead3;
+    border-left: 5px solid #b9d5a7;
+    padding-left: 10px;
+}
+.theme-dark .panel-middle {
+    color: #fff;
+}
+.theme-dark .panel-default .panel-heading {
+    color: #fff;
+    background-color: #509624;
+}
+.theme-dark .panel-default table tr.info th {
+    background-color: #d9edf7;
+}
+.theme-dark .bootstrap-dialog.type-default .modal-header {
+    color: #fff;
+    background-color: #509624;
+}
+.theme-dark .bootstrap-dialog.type-default .bootstrap-dialog-title {
+    color: #fff;
+}
+.theme-dark .dropdown-menu-header {
+    color: #fff;
+    background: #509624;
+}
 
 /* Red Theme - #ff0000 */
 /*
 .theme-red .btc-wallet { color: #fff; border-color: #ff0000; }
 .theme-red .btc-wallet .wallet-header { color: #fff; background-color: #ff0000; }
 .theme-red .navbar-default { border-color: #ff0000; }
-.theme-red .navbar-default .navbar-nav > .open > a, 
-.theme-red .navbar-default .navbar-nav > .open > a:hover, 
+.theme-red .navbar-default .navbar-nav > .open > a,
+.theme-red .navbar-default .navbar-nav > .open > a:hover,
 .theme-red .navbar-default .navbar-nav > .open > a:focus { background-color: #ff0000; }
 .theme-red .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .theme-red .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus { color: #fff; background-color: #ff0000; }
@@ -167,4 +243,3 @@
 .theme-red .bootstrap-dialog.type-default .bootstrap-dialog-title { color: #fff; }
 .theme-red .btn-theme { color: #fff; background-color: #ff0000; border-color: #ff0000; }
 .theme-red .dataTables_length > label > select { color: #000; }
-
